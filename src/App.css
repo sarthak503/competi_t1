@@ -1,38 +1,96 @@
-.App {
+body{
+  background-image: url('../public/background.jpeg');
+  background-size: cover;
+  color: aliceblue;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+h1{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.search{
+  display: flex;
+  justify-content: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.list{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  margin-left: 20%;
+  margin-right: 20%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.input{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  width:500px ;
+  padding: 10px;
+}
+.main-card{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  flex-wrap: wrap;
+  width: 500px;
+  margin-left: 550px;
+}
+button{
+  border: none;
+  font-weight: bolder;
+  font-size: 15px;
+  background-color:rgb(234, 114, 40);
+  border: 1px solid white;
+  color:white;
+  padding: 5px 30px;
+}
+.submit{
+  background-color:rgb(22, 77, 229);
+  color:white;
+}
+button:hover{
+  background-color:rgb(22, 77, 229);
+  color:white;
+}
+.submit:hover{
+  background-color: rgb(234, 114, 40);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.card{
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.displayImg{
+  display: flex;
+  width: 300px;
+  height: 200px;
+  justify-content: center;
+  
+}
+.displayP{
+  display: flex;
+  flex-direction: column;
+  width:250px;
+  justify-content: center;
+  align-items: center;
+}
+.book{
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 600px) {
+  button{
+    font-size: 10px;
+    padding: 2px 5px;
+    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
-  to {
-    transform: rotate(360deg);
+  .list{
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
